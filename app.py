@@ -7,7 +7,7 @@ st.set_page_config(page_title="Agentic Resume Chatbot", layout="wide")
 st.title("🤖 Resume Chatbot")
 
 # Load secrets
-resume_path = "C:/Users/jugal/Downloads/POCs/resume_chatbot/Jugal_gurnani_Resume.pdf"
+resume_path = "/Jugal_gurnani_Resume.pdf"
 api_key = st.secrets["OPENAI_API_KEY"]
 
 # Read resume once and cache it
