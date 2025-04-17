@@ -1,4 +1,3 @@
-# agents.py
 from openai import OpenAI
 
 class RetrieverAgent:
@@ -6,8 +5,7 @@ class RetrieverAgent:
         self.resume_text = resume_text
 
     def get_context(self, query):
-        # For demo: return full resume. For production, use vector search.
-        return self.resume_text
+        return self.resume_text              # For demo: return full resume. For production, use vector search.
 
 class ReasoningAgent:
     def __init__(self, openai_api_key, retriever_agent):
