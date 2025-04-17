@@ -1,4 +1,3 @@
-# resume_reader.py
 import pdfplumber
 import docx
 
