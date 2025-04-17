@@ -6,7 +6,6 @@ import os
 st.set_page_config(page_title="Agentic Resume Chatbot", layout="wide")
 st.title("🤖 Resume Chatbot")
 
-# Load secrets
 resume_path = "Jugal_gurnani_Resume.pdf"
 api_key = st.secrets["OPENAI_API_KEY"]
 
@@ -18,7 +17,7 @@ def get_resume_text(resume_path):
 
 resume_text = get_resume_text(resume_path)
 
-# Initialize agents once and cache them
+# Initialize agents and cache them
 @st.cache_resource
 def get_agents(resume_text, api_key):
     retriever = RetrieverAgent(resume_text)
